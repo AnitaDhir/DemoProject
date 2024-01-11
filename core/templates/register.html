@@ -1,0 +1,22 @@
+{% extends "core/home1.html" %}
+
+    {% block content %}
+    <div class="content">
+      <h2>Registration Form</h2>
+    </div>
+    <form method="post">                
+        {% csrf_token %}
+        <label for="">name :</label>
+        <input type="text" name="name"> <br> <br>
+        <label for="">email :</label>
+        <input type="text" name="email"><br> <br>
+        <label for="">password :</label>
+        <input type="text" name="password"><br> <br>
+        <button type="Submit" class="btn btn-lg btn-success">Submit</button>
+    </form>
+    <br> <br>
+    <button><a href="{% url "home" %}"><type="Submit" class="btn btn-lg btn-success">Back </a></button>
+</div>
+{% endblock %}
+
+   

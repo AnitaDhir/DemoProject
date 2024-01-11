@@ -1,0 +1,18 @@
+{% extends "core/home.html" %}
+
+    {% block content %}
+      <div class="content">
+        <h2>Login Page</h2>
+      </div>
+      <form method="post">                
+          {% csrf_token %}
+          <label for="">email :</label>
+          <input type="text" name="email" required><br> <br>
+          <label for="">password :</label>
+          <input type="text" name="password" required><br> <br>
+          <button type="Submit" class="btn btn-lg btn-success">Submit</button>
+          
+      </form>
+{% comment %} </div>s {% endcomment %}
+    {% endblock %}
+
